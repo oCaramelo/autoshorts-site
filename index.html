@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>autoshorts</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #5a5a5a;
+      --accent: #2563eb;
+      --border: #e5e5e5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12141a;
+        --fg: #f2f2f2;
+        --muted: #a3a3a3;
+        --accent: #7ea8ff;
+        --border: #2a2d36;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 5rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 0.25rem;
+    }
+    .tagline {
+      color: var(--muted);
+      margin-top: 0;
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-size: 1.05rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p { margin: 0 0 1rem; }
+    a { color: var(--accent); }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer a { color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>autoshorts</h1>
+    <p class="tagline">Automated short-form video production, by Zap Comics Shorts.</p>
+
+    <p>
+      autoshorts is a personal automation tool that generates short-form vertical
+      videos — script, narration, and captions — and publishes them to a single
+      YouTube channel operated by its developer. It is not a public product or
+      service, and it is not available for other users to sign up for.
+    </p>
+
+    <h2>What it does with your Google data</h2>
+    <p>
+      autoshorts connects to the YouTube Data API to manage videos on the
+      developer's own YouTube channel: uploading rendered videos, setting their
+      title, description, tags, and thumbnail, and scheduling when they go
+      public. See the <a href="privacy.html">privacy policy</a> for details.
+    </p>
+
+    <footer>
+      Contact: <a href="mailto:zapcomicsshorts@gmail.com">zapcomicsshorts@gmail.com</a>
+      &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a>
+    </footer>
+  </main>
+</body>
+</html>
