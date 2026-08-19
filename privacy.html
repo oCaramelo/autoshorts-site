@@ -58,15 +58,17 @@
 
     <p>
       autoshorts is a personal, single-operator automation tool. This policy
-      explains how it handles data accessed through Google APIs.
+      explains how it handles data accessed through the Google and TikTok
+      APIs it connects to.
     </p>
 
     <h2>Who uses this application</h2>
     <p>
       autoshorts is used only by its developer, to manage videos on the
-      developer's own YouTube channel. It is not distributed to, or used by,
-      any other end users, and it does not collect, process, or store personal
-      information belonging to anyone other than the developer.
+      developer's own YouTube channel and TikTok account. It is not
+      distributed to, or used by, any other end users, and it does not
+      collect, process, or store personal information belonging to anyone
+      other than the developer.
     </p>
 
     <h2>What data it accesses</h2>
@@ -81,18 +83,27 @@
       <li>Reading basic channel information, to confirm uploads go to the correct channel.</li>
     </ul>
     <p>
-      No data from any other Google account, YouTube channel, or third party is
-      accessed, collected, or shared.
+      Through TikTok's Content Posting API, autoshorts accesses and manages
+      data belonging to the developer's own TikTok account only:
+    </p>
+    <ul>
+      <li>Uploading video files and publishing them as posts on that account.</li>
+      <li>Setting a post's caption/title.</li>
+      <li>Reading basic profile and posting-limit information (via <code>creator_info</code>), to confirm uploads go to the correct account and respect its limits.</li>
+    </ul>
+    <p>
+      No data from any other Google account, YouTube channel, TikTok account,
+      or third party is accessed, collected, or shared.
     </p>
 
     <h2>Data storage and retention</h2>
     <p>
-      An OAuth access/refresh token is stored so the application can act on the
-      developer's own channel without repeated manual sign-in. It is stored
-      privately (not committed to source control, not shared with any third
-      party) and used solely to call the YouTube Data API on the developer's
-      behalf. No video content, metadata, or channel data is sold, shared, or
-      used for advertising.
+      An OAuth access/refresh token is stored per platform so the application
+      can act on the developer's own channel and account without repeated
+      manual sign-in. Each token is stored privately (not committed to source
+      control, not shared with any third party) and used solely to call that
+      platform's API on the developer's behalf. No video content, metadata,
+      or account data is sold, shared, or used for advertising.
     </p>
 
     <h2>Google API Services User Data Policy</h2>
@@ -103,6 +114,15 @@
       including the Limited Use requirements.
     </p>
 
+    <h2>TikTok API data use</h2>
+    <p>
+      autoshorts' use of information received from TikTok's APIs adheres to
+      <a href="https://www.tiktok.com/legal/page/global/tik-tok-developer-terms-of-service/en" target="_blank" rel="noopener">TikTok's Developer Terms of Service</a>.
+      Content published to TikTok through this tool carries no autoshorts
+      branding or watermark added by the API call itself, in line with
+      TikTok's content-sharing guidelines.
+    </p>
+
     <h2>Contact</h2>
     <p>
       Questions about this policy can be sent to
@@ -111,6 +131,7 @@
 
     <footer>
       <a href="index.html">← Back to autoshorts</a>
+      &nbsp;·&nbsp; <a href="terms.html">Terms of Service</a>
     </footer>
   </main>
 </body>
